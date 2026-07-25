@@ -14,7 +14,7 @@ android {
   compileSdk = 36
 
   defaultConfig {
-    applicationId = "com.digicam.app"
+    applicationId = "com.aistudio.digicam.kxmpzq"
     minSdk = 26
     targetSdk = 36
     versionCode = 1
@@ -67,6 +67,11 @@ android {
   buildFeatures {
     compose = true
     buildConfig = true
+  }
+  packaging {
+    jniLibs {
+      useLegacyPackaging = true
+    }
   }
   testOptions { unitTests { isIncludeAndroidResources = true } }
 }

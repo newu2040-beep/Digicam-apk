@@ -64,7 +64,10 @@ fun CameraScreen(
 
     DisposableEffect(Unit) {
         sensorLevelManager.start()
-        onDispose { sensorLevelManager.stop() }
+        onDispose { 
+            sensorLevelManager.stop() 
+            cameraManager.unbindCamera()
+        }
     }
 
     Box(
@@ -76,6 +79,7 @@ fun CameraScreen(
         AndroidView(
             factory = { ctx ->
                 PreviewView(ctx).apply {
+                    implementationMode = PreviewView.ImplementationMode.COMPATIBLE
                     scaleType = PreviewView.ScaleType.FILL_CENTER
                     previewViewRef = this
                     cameraManager.bindCamera(

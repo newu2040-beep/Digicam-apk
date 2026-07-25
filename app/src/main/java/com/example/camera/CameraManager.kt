@@ -34,6 +34,14 @@ class CameraManager(private val context: Context) {
     private val _isCapturing = MutableStateFlow(false)
     val isCapturing: StateFlow<Boolean> = _isCapturing
 
+    fun unbindCamera() {
+        try {
+            cameraProvider?.unbindAll()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
     fun bindCamera(
         lifecycleOwner: LifecycleOwner,
         previewView: PreviewView,
