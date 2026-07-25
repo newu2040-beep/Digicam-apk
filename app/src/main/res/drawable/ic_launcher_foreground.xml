@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Camera Body -->
+    <path
+        android:fillColor="#FFE0E0E0"
+        android:pathData="M32,38h44c3.3,0 6,2.7 6,6v24c0,3.3 -2.7,6 -6,6H32c-3.3,0 -6,-2.7 -6,-6V44c0,-3.3 2.7,-6 6,-6z" />
+    <!-- Camera Top Viewfinder Bump -->
+    <path
+        android:fillColor="#FFD0D0D0"
+        android:pathData="M44,34h20c1.7,0 3,1.3 3,3v1H41v-1c0,-1.7 1.3,-3 3,-3z" />
+    <!-- Shutter Button Accent (Pastel Coral) -->
+    <path
+        android:fillColor="#FFFB8B74"
+        android:pathData="M35,34h6v4h-6z" />
+    <!-- Outer Lens Ring (Mint Pastel) -->
+    <path
+        android:fillColor="#FFA8E6CF"
+        android:pathData="M54,56m-14,0a14,14 0 1,0 28,0a14,14 0 1,0 -28,0" />
+    <!-- Inner Lens Aperture Circle -->
+    <path
+        android:fillColor="#FF212121"
+        android:pathData="M54,56m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0" />
+    <!-- Lens Reflection Reflection Sparkle -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M57,51a3,3 0 1,0 0,6a3,3 0 1,0 0,-6" />
+</vector>

@@ -1,0 +1,6 @@
+{
+  "name": "DIGICAM",
+  "description": "A modern aesthetic digital camera app inspired by compact digicams and film photography with live filters, Pro controls, and photo editor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
